@@ -19,7 +19,7 @@ Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
 Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
 Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
 Plug 'ycm-core/YouCompleteMe'
-
+Plug 'https://github.com/neoclide/coc.nvim' "Auto Completion
 call plug#end()
 
 nnoremap <C-f> :NERDTreeFocus<CR>
@@ -33,6 +33,7 @@ let g:ycm_auto_trigger = 1
 let g:ycm_goto_previous_completion = '<C-p>'
 let g:ycm_goto_next_completion = '<C-n>'
 
+let g:coc_disable_startup_warning = 1
 
 :colorscheme gruvbox
 
