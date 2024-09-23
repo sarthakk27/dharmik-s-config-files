@@ -1,6 +1,5 @@
-# Swap files
-*.swp
+# Ignore everything
+*
 
-# Backup files
-*~
-
+# But not these files...
+!.init.vim
