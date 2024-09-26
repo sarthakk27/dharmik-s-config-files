@@ -1,5 +1,6 @@
 :echo ">^.^<"
 
+
 :set number
 
 :set autoindent
@@ -14,6 +15,8 @@
 
 
 inoremap jj <Esc>
+
+:nnoremap <C-s> :w <CR>
 
 call plug#begin()
 
