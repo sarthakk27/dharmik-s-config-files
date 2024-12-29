@@ -28,7 +28,12 @@ Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
 Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
 Plug 'ycm-core/YouCompleteMe'
 Plug 'https://github.com/neoclide/coc.nvim' "Auto Completion
+Plug 'vimwiki/vimwiki'
 call plug#end()
+
+set nocompatible
+filetype plugin on
+syntax on
 
 nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
@@ -60,4 +65,20 @@ autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellesca
 nnoremap <C-s> :w<CR>
 inoremap <C-s> <Esc>:w<CR>a
 vnoremap <C-s> <Esc>:w<CR>
+
+"VimWiki
+let g:vimwiki_diary_rel_path = 'diary'
+let g:vimwiki_auto_diary_index = 1
+
+" Open today's diary entry
+nnoremap <Leader>dt :VimwikiMakeDiaryNote<CR>
+
+" Open yesterday's diary entry
+nnoremap <Leader>dy :VimwikiDiaryPrevDay<CR>
+
+" Open tomorrow's diary entry
+nnoremap <Leader>dm :VimwikiDiaryNextDay<CR>
+
+" Open the diary index
+nnoremap <Leader>di :VimwikiDiaryIndex<CR>
 
